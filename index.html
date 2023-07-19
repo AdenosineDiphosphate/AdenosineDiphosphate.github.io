@@ -1,39 +1,95 @@
 <html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Baylor Quantum Optics Lab</title>
-    <link href="resources/css/reset.css" rel="stylesheet">
-    <link href="resources/css/main-page.css" rel="stylesheet">
-  </head>
- 
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Baylor Quantum Optics Lab</title>
+  <link href="resources/css/reset.css" rel="stylesheet">
+  <link href="resources/css/main-page.css" rel="stylesheet">
+  <script src="resources/javascript/panel.js"></script>
+</head>
+
 <body>
   <header>
     <div class="container">
       <a href="index.html" class="desktop logo">QUANTUM OPTICS LAB</a>
-      <nav class="nav-bar desktop">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Research</a></li>
-          <li><a href="#">People</a></li>
-          <li><a href="#">News</a></li>
-          <li><a href="#">Publications</a></li>
-          <li><a href="#">Instruments</a></li>
-          <li><a href="#">Outreach</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
+      <div class="desktop-nav">
+        <nav class="nav-bar desktop">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Research</a></li>
+            <li><a href="#">People</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Publications</a></li>
+            <li><a href="#">Instruments</a></li>
+            <li><a href="#">Outreach</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <button id="menu-button" class="mobile"> Menu </button>
+      <div class="panel">
+        <nav class="mobile-nav">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Research</a></li>
+            <li><a href="#">People</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Publications</a></li>
+            <li><a href="#">Instruments</a></li>
+            <li><a href="#">Outreach</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </header>
-  <div class="main">
+  <div class="big-container">
     <div class="banner">
       <h1>Welcome to the Quantum Optics Lab</h1>
+      <h2>Department of Physics</h2>
+      <h3>Baylor University</h3>
     </div>
-    <div class="mission">
-      <p>The long-term goal of our research is to develop and advance nanoscale imaging techniques for extremely-high resolution sensing(chemical, thermal, optical and magnetic) in practical complex environments and see the eventual adoption of these techniques by the scientific community in both academic and industrial settings.<br><br>Our research focus is in two areas. One is to develop a transformative nanoscale chemical and thermal imaging microscopy based on advanced plasmonic fiber probes and use it to study materials in application-relevant environments (ambient and liquid). The other is to study surface reaction mechnisms on various catalytic and optic material at the microscale and molecular level.</p>
+    <div class="main">
+      <div class="mission">
+        <h1>Research Goals</h1>
+        <div class="container">
+          <p>The long-term goal of our research is to develop and advance nanoscale imaging techniques for
+            extremely-high resolution sensing(chemical, thermal, optical and magnetic) in practical complex environments
+            and see the eventual adoption of these techniques by the scientific community in both academic and
+            industrial settings.<br><br>Our research focus is in two areas. One is to develop a transformative nanoscale
+            chemical and thermal imaging microscopy based on advanced plasmonic fiber probes and use it to study
+            materials in application-relevant environments (ambient and liquid). The other is to study surface reaction
+            mechnisms on various catalytic and optic material at the microscale and molecular level.</p>
+          <div class="figure">
+            <img class="group-pic" src="https://blogs.baylor.edu/zhenrong_zhang/files/2021/09/Group-summer-2021.jpg">
+            <figcaption>Quantum Optics Lab Group Summer 2021</figcaption>
+          </div>
+        </div>
+      </div>
+      <div class="news">
+        <h1>News</h1>
+        <ul class="news-items">
+          <li>Aman Patel won the 2023 Undergraduate Outstanding Platform Presentations award at the Undergraduate
+            Research and Scholarly Achievement (URSA) week! Congratulations</li>
+          <hl></hl>
+          <li>Nolan Craft won the F.Ray Wilson Award for Best Thesis in the Physical and Life Sciences (2022) in the
+            Honors Program.[<a href="https://www.baylor.edu/honorsprogram/index.php?id=961047">link</a>]</li>
+          <li>Congratulations to Nolan! Nolan is awarded the Beth Wilson Memorial Award! The Beth Wilson Memorial Award
+            is awarded each year to the top Baylor graduating senior who majors in mathematics.</li>
+          <li>Congratulations to Nolan! Nolan has successfully defended his Honor's Thesis.</li>
+          <li>Congratulations to Aman! His Baylor 2022 URSA Scholars Week presentation was chosen as an Outstanding
+            Presentation.</li>
+          <li>Congratulations to Aman! Aman’s application for URSA (Undergraduate Research and Scholarly Achievement)
+            research grant is awarded ($4,620).</li>
+          <li>Aman Patel won the Best Material Science Poster award at the 56th meeting of the Texas Society for
+            Microscopy (TSM) in March 2022!</li>
+        </ul>
+      </div>
     </div>
   </div>
 </body>
 <footer>
-  <h1>Contact US</h1>
+  <h1>Contact Us</h1>
 </footer>
+
 </html>
