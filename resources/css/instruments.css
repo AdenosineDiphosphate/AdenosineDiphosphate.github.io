@@ -1,0 +1,198 @@
+html {
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    margin: 0;
+    background-color: white;
+}
+
+.big-container {
+    max-width: 1630px;
+    margin: 0px auto !important;
+}
+
+body {
+    padding-top: 5.3125rem;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+    gap: 20px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    background-color: black;
+}
+
+#menu-button {
+    display: none;
+    /* Hide the button on larger screens */
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+#menu-button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    padding: 1.875rem;
+}
+
+header .logo {
+    font-weight: bold;
+    font-size: 1rem;
+    color: gold;
+    flex: 1;
+}
+
+header nav ul {
+    display: flex;
+}
+
+nav li a {
+    padding-left: 1.5rem;
+    color: white;
+}
+
+nav {
+    vertical-align: bottom;
+    line-height: 1.6;
+    font-size: 1rem;
+    color: white;
+    padding: 0.5rem 1rem;
+}
+
+.panel {
+    position: fixed;
+    top: 5.3125rem;
+    right: -100%;
+    width: 280px;
+    height: 100%;
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    z-index: 11;
+    transition: right 0.3s ease-in-out;
+}
+
+.panel ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+/* Show the panel when the button is clicked */
+body.panel-open .panel {
+    right: 0;
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 33.5rem;
+    z-index: 0;
+    color: gold;
+    background-image: url("../images/NSOM.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-size: 100%;
+}
+
+.banner h1 {
+    margin-top: 2rem;
+    font-size: 7em;
+}
+
+.lab-container{
+    display: grid;
+    padding: 10px 10px;
+}
+
+.A{
+    background-color: lightgrey;
+    grid-template-columns: 3fr 2fr;
+}
+
+.B{
+    background-color: white;
+    grid-template-columns: 2fr 3fr;
+}
+
+.img-container{
+    width: 100%;
+}
+
+img{
+    width: 100%;
+}
+
+.main h2 {
+    color: gold;
+    font-weight: bold;
+    background-color: black;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    vertical-align: center;
+    width: 100%;
+    font-size: 2rem;
+    height: 3rem
+}
+
+.main h3 {
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: bold;
+}
+
+.lab-container p{
+    font-size: 1rem;
+    margin: 10px;
+    line-height: 1.5rem;
+}
+
+.instrument-container{
+    margin: 5px;
+    padding: 5px;
+}
+
+.instrument-container ol{
+    list-style-type: decimal;
+    padding-left: 2rem;
+}
+
+.instrument-container li{
+    padding-left: 10px;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+iframe{
+    margin: 2px auto;
+}
+
+footer {
+    background-color: black;
+    padding: 1.5rem 2rem;
+    color: white;
+    display: flex;
+    font-size: .75rem;
+}

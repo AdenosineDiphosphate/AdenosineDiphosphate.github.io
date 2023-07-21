@@ -7,7 +7,7 @@ html{
 
 .big-container{
     max-width: 1630px;
-    margin: 0 auto !important;
+    margin: 10px auto !important;
 }
 
 body{
@@ -89,7 +89,7 @@ nav {
     display:flex;
     flex-direction: column;
     justify-content: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   
   /* Show the panel when the button is clicked */
@@ -326,6 +326,9 @@ footer{
         align-items: center;
         justify-content: center;
         grid-column: 1 /span 1;
+    }
+    .mission p {
+        font-size: 0.9em;
     }
     .desktop-nav{
         display: none;
