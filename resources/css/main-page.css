@@ -7,19 +7,18 @@ html{
 
 .big-container{
     max-width: 1630px;
-    margin: 10px auto !important;
+    margin: 0px auto !important;
 }
 
 body{
-    padding-top: 5.3125rem;
+    padding-top: 5.5rem;
 }
 
 .main{
     position: relative;
     display: grid;
     grid-template-columns: 3fr 1fr;
-    padding: 20px;
-    gap: 20px;
+    padding: 0px auto;
 }
 
 header {
@@ -27,8 +26,10 @@ header {
     top: 0;
     z-index: 10;
     width: 100%;
+    max-height: 5.5rem;
     background-color: black;
 }
+
 #menu-button {
     display: none; /* Hide the button on larger screens */
     background: none;
@@ -74,10 +75,10 @@ nav {
 
 .panel {
     position: fixed;
-    top: 5.3125rem;
+    top: 5.5rem;
     right: -100%; /* Initial position to hide the panel */
     width: 280px;
-    height: 100%;
+ 
     background-color: black;
     color: white;
     padding: 1rem;

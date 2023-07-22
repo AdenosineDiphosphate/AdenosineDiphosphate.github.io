@@ -8,15 +8,21 @@ html {
 .big-container {
     max-width: 1630px;
     margin: 0px auto !important;
+    height: 100%;
 }
 
 body {
     padding-top: 5.5rem;
 }
 
+.page{
+    margin-top: 1px;
+}
+
 .main {
-    display: flex;
-    flex-direction: column;
+    padding-top: 1rem;
+    padding: 1rem;
+    gap: 20px;
 }
 
 header {
@@ -75,10 +81,9 @@ nav {
 
 .panel {
     position: fixed;
-    top: 5.3125rem;
+    top: 5.5rem;
     right: -100%;
     width: 280px;
-    height: 100%;
     background-color: black;
     color: white;
     padding: 1rem;
@@ -97,52 +102,15 @@ body.panel-open .panel {
     right: 0;
 }
 
-.banner {
+.main-content{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    height: 33.5rem;
-    z-index: 0;
-    color: gold;
-    background-image: url("../images/NSOM.jpeg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    font-size: 100%;
 }
 
-.banner h1 {
-    margin-top: 2rem;
-    font-size: 7em;
+.bold{
+    font-weight: bold;;
 }
 
-.lab-container{
-    display: grid;
-    padding: 10px 10px;
-}
-
-.A{
-    background-color: lightgrey;
-    grid-template-columns: 3fr 2fr;
-}
-
-.B{
-    background-color: white;
-    grid-template-columns: 2fr 3fr;
-}
-
-.img-container{
-    display: flex;
-    width: 100%;
-}
-
-img{
-    width: 100%;
-}
-
-.main h2 {
+h1{
     color: gold;
     font-weight: bold;
     background-color: black;
@@ -156,39 +124,24 @@ img{
     height: 3rem
 }
 
-.main h3 {
-    font-size: 1.5em;
-    text-align: center;
-    font-weight: bold;
+h2{
+    font-size: 1.5rem;
+    padding: 1rem;
 }
 
-.lab-container p{
-    font-size: 1rem;
-    margin: 10px;
-    line-height: 1.5rem;
+a{
+    color: darkgreen;
 }
 
-.instrument-container{
-    margin: 5px;
-    padding: 5px;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-}
-
-.instrument-container ol{
-    list-style-type: decimal;
-    padding-left: 2rem;
-}
-
-.instrument-container li{
-    padding-left: 10px;
-    font-size: 1rem;
-    line-height: 1.5rem;
+p{
+    font-size: 1.5rem;
+    padding: 1rem;
 }
 
 iframe{
     margin: 2px auto;
+    padding: 2px;
+    width: 100%;
 }
 
 footer {
