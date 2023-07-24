@@ -119,6 +119,7 @@ h1{
     flex-direction: column;
     justify-content: center;
     vertical-align: center;
+    margin-top: 3px;
     width: 100%;
     font-size: 2rem;
     height: 3rem
@@ -143,11 +144,18 @@ iframe{
     padding: 2px;
     width: 100%;
 }
-
-footer {
+footer{
     background-color: black;
     padding: 1.5rem 2rem;
     color: white;
     display: flex;
     font-size: .75rem;
+}
+
+footer a{
+    color: white;
+}
+
+footer a:hover{
+    mouse: pointer;
 }

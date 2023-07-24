@@ -6,7 +6,7 @@ html{
 }
 
 .big-container{
-    max-width: 1630px;
+    max-width: 1800px;
     margin: 0px auto !important;
 }
 
@@ -16,8 +16,7 @@ body{
 
 .main{
     position: relative;
-    display: grid;
-    grid-template-columns: 3fr 1fr;
+    display: flex;
     padding: 0px auto;
 }
 
@@ -31,7 +30,7 @@ header {
 }
 
 #menu-button {
-    display: none; /* Hide the button on larger screens */
+    display: none;
     background: none;
     border: none;
     color: white;
@@ -39,6 +38,7 @@ header {
     padding: 0.5rem 1rem;
     cursor: pointer;
 }
+
 #menu-button:hover {
     background-color: rgba(255, 255, 255, 0.1);
 }
@@ -51,7 +51,7 @@ header .container{
 
 header .logo{
     font-weight: bold;
-    font-size: 1.9rem;
+    font-size: 1.5rem;
     color: gold;
     flex:1;
 }
@@ -77,26 +77,24 @@ nav {
     position: fixed;
     top: 5.5rem;
     right: -100%; /* Initial position to hide the panel */
-    width: 280px;
- 
+    width: 180px;
     background-color: black;
     color: white;
     padding: 1rem;
     z-index: 11;
     transition: right 0.3s ease-in-out;
-  }
+}
 
-  .panel ul{
+.panel ul{
     display:flex;
     flex-direction: column;
     justify-content: center;
     font-size: 1.5rem;
-  }
+}
   
-  /* Show the panel when the button is clicked */
-  body.panel-open .panel {
+body.panel-open .panel {
     right: 0;
-  }
+}
 
 .banner {
     display: flex;
@@ -104,10 +102,11 @@ nav {
     align-items: center;
     text-align: center;
     justify-content: center;
-    height: 43.5rem;
+    height: 100%;
     z-index: 0;
     color: gold;
-    background-image:url("https://blogs.baylor.edu/zhenrong_zhang/files/2018/12/Picture3-2hmw3hw.png");
+    /*background-image:url("https://blogs.baylor.edu/zhenrong_zhang/files/2018/12/Picture3-2hmw3hw.png");*/
+    background-image:url("../images/group-picture.jpeg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -116,7 +115,7 @@ nav {
 
 .banner h1{
     margin-top: 2rem;
-    font-size: 7em;
+    font-size: 6em;
 }
 
 .banner h2{
@@ -141,56 +140,66 @@ nav {
 }
 
 .mission .container{
-    display: grid;
     padding: 10px;
-    grid-template-columns: 30% 70%;
     align-items: center;
     justify-content: center;
     gap: 10px;
     grid-column: 1 /span 1;
 }
 
-.figure{
-    align-items: center;
-    justify-content: center;
+.lab-container{
+    display: flex;
+    padding: 10px 10px;
+}
+
+.A{
+    background-color: lightgrey;
+
+}
+
+.B{
+    background-color: white;
+}
+
+.img-container{
+    display: flex;
+    width: 100%;
+}
+
+img{
+    max-width: 600px;
+    max-height: 200px;
+    width: 100%;
+}
+
+.main h2 {
+    color: gold;
+    font-weight: bold;
+    background-color: black;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    vertical-align: center;
+    width: 100%;
+    font-size: 2rem;
+    height: 3rem
+}
+
+.main h3 {
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: bold;
+}
+
+.lab-container p{
+    font-size: 1rem;
+    margin: 10px;
+    line-height: 1.5rem;
 }
 
 .mission p{
     font-size: 1.5em;
-}
-
-.group-pic{
-    display: flex;
-    width: 100%;
-    margin: 0 auto;
-}
-
-figcaption{
-    margin: 0 auto;
-    margin-top: 1rem;
-    font-size: 1rem;
-}
-
-.news{
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    color:darkslategray;
-    list-style: 1.4;
-    grid-column: 2 /span 1;
-    font-size: 100%;
-}
-
-.news li{
-    border-bottom: 1px solid black;
-    text-align: center;
-    font-size: 1em;
-    padding: 20px 20px;
-}
-
-.news a{
-    color: blue;
 }
 
 .main h1{
@@ -203,9 +212,9 @@ figcaption{
     justify-content: center;
     vertical-align: center;
     width: 100%;
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin-bottom: 10px;
-    height: 2rem;
+    height: 3rem;
 }
 
 footer{
@@ -216,18 +225,41 @@ footer{
     font-size: .75rem;
 }
 
+footer a{
+    color: white;
+}
+
+footer a:hover{
+    mouse: pointer;
+}
+
+.stt {
+    position: fixed;
+    z-index: 12;
+    right: 1rem;
+    bottom: 1rem;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background: rgb(172, 172, 174) url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 384 512'%3E%3Cpath fill='currentColor' d='M352 352c-8.188 0-16.38-3.125-22.62-9.375L192 205.3l-137.4 137.4c-12.5 12.5-32.75 12.5-45.25 0s-12.5-32.75 0-45.25l160-160c12.5-12.5 32.75-12.5 45.25 0l160 160c12.5 12.5 12.5 32.75 0 45.25C368.4 348.9 360.2 352 352 352z'%3E%3C/path%3E%3C/svg%3E") center no-repeat;
+    box-shadow: 0 0.25rem 0.5rem 0 gray;
+    opacity: 0.7;
+  }
+  .stt:hover {
+    opacity: 0.8;
+  }
+  .stt:focus {
+    opacity: 0.9;
+  }
+  .stt:active {
+    opacity: 1;
+  }
+
 @media screen and (max-width: 1400px) {
     .mission .container {
       grid-template-columns: 1fr;
       grid-template-rows: auto auto;
       gap: 10px;
-    }
-    .figure {
-      grid-row: 2;
-    }
-  
-    .group-pic {
-      width: 100%;
     }
 
     .news{
@@ -251,9 +283,6 @@ footer{
     .mission p{
         font-size: 1.2em;
     }
-    .news{
-        font-size: 1em;
-    }
   }
 
   @media screen and (max-width: 1080px) {
@@ -267,9 +296,6 @@ footer{
     .mission p{
         font-size: 1.2em;
     }
-    .news{
-        font-size: 0.9em;
-    }
     .banner h1{
         font-size: 5em;
     }
@@ -281,11 +307,26 @@ footer{
     .banner h3{
         font-size: 2em;
     }
+    .lab-container{
+        display: flex;
+        padding: 10px 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    img{
+        max-width: 600px;
+        max-height: 400px;
+        width: 100%;
+    }
+
   }
 
   @media screen and (min-width: 800px) {
     #menu-button {
       display: none;
+    }
+    .panel {
+        display: none;
     }
   }
 
@@ -296,6 +337,19 @@ footer{
         font-size: 0.8em;
         padding: 10px 10px;
     }
+    .banner {
+        height: 60%;
+    }
+    .lab-container{
+        display: flex;
+        padding: 10px 10px;
+        flex-wrap: wrap;
+    }
+    img{
+        max-width: 600px;
+        max-height: 400px;
+        width: 100%;
+    }
   }
 
   @media screen and (min-width: 800px) and (max-width: 1000) {
@@ -305,19 +359,27 @@ footer{
         font-size: 0.5em;
         padding: 10px 10px;
     }
+    .banner {
+        height: 60%;
+    }
+    .lab-container{
+        display: flex;
+        padding: 10px 10px;
+        flex-wrap: wrap;
+    }
+    img{
+        max-width: 600px;
+        max-height: 400px;
+        width: 100%;
+    }
   }
 
   @media screen and (max-width: 800px) {
     #menu-button {
         display: flex;
     }
-    .main{
-        position: relative;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 0.6fr;
-        padding: 20px;
-        gap: 20px;
+    .banner {
+        height: 60%;
     }
     .mission{
         position: relative;
@@ -328,15 +390,24 @@ footer{
         justify-content: center;
         grid-column: 1 /span 1;
     }
+    footer{
+        display: none;
+    }
+    .lab-container{
+        display: flex;
+        padding: 10px 10px;
+        flex-wrap: wrap;
+    }
+    img{
+        max-width: 600px;
+        max-height: 400px;
+        width: 100%;
+    }
     .mission p {
         font-size: 0.9em;
     }
     .desktop-nav{
         display: none;
-    }
-    .news{
-        grid-column: 1/ span 1;
-        grid-row: 2 /span 1;
     }
 
     .banner h1{
@@ -349,5 +420,29 @@ footer{
     
     .banner h3{
         font-size: 1em;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .banner {
+        height: 40%;
+    }
+    .mission{
+        position: relative;
+        color:darkslategray;
+        list-style: 1.4;
+        font-size: 100%;
+        align-items: center;
+        justify-content: center;
+        grid-column: 1 /span 1;
+    }
+    .main h1{
+        font-size: 1.5rem;
+        font-weight: normal;
+        margin-bottom: 10px;
+        height: 3rem;
+    }
+    .main h3 {
+        font-size: 1.5rem;
     }
   }
