@@ -117,11 +117,12 @@ body.panel-open .panel {
 
 .news-item{
     line-height: 2rem;
-    padding: 10px 0px;
+    padding: 10px auto;
     margin: 0px 30px;
     display: flex;
     vertical-align: center;
     justify-items: center;
+    justify-content: center;
     align-items: center;
     border-bottom: 2px solid grey ;
 }

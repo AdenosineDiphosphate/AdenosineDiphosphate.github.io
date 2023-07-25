@@ -114,6 +114,10 @@ body.panel-open .panel {
     font-size: 100%;
 }
 
+.bold{
+    font-weight: bold;
+}
+
 .banner h1{
     margin-top: 2rem;
     font-size: 6em;
@@ -130,30 +134,39 @@ body.panel-open .panel {
     text-align: center;
 }
 
-.lab-container{
-    display: grid;
-    align-items: center;
-    grid-template-columns: 7fr 3fr;
-    padding: 30px 10px;
-}
-
-.A{
-    background-color: lightgrey;
-
-}
-
-.B{
-    background-color: white;
-}
-
-.img-container{
+.pi-profile{
     display: flex;
-    width: 100%;
+    padding: 20px;
 }
 
-img{
+.profile-grid{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.profile{
+    display: flex;
+    flex-direction: column;
+}
+
+h4{
+    line-height: 2.4rem;
+    font-size: 1.2rem;
+    text-align:center;
+    margin: 0px auto;
+}
+
+.pi-profile img{
+    max-width: 200px;
+    max-height: 300px;
+}
+
+.profile-grid img{
     align-self: center;
-    width: 100%;
+    justify-self: center;
+    width: 200px;
+    height: 300px;
 }
 
 .main h2 {

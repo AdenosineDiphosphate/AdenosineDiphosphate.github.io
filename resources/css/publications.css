@@ -130,32 +130,6 @@ body.panel-open .panel {
     text-align: center;
 }
 
-.lab-container{
-    display: grid;
-    align-items: center;
-    grid-template-columns: 7fr 3fr;
-    padding: 30px 10px;
-}
-
-.A{
-    background-color: lightgrey;
-
-}
-
-.B{
-    background-color: white;
-}
-
-.img-container{
-    display: flex;
-    width: 100%;
-}
-
-img{
-    align-self: center;
-    width: 100%;
-}
-
 .main h2 {
     color: gold;
     font-weight: bold;
@@ -177,11 +151,36 @@ img{
     font-weight: bold;
 }
 
+a{
+    color: green;
+}
+
+.main ol{
+    list-style-type: decimal;
+    margin-left: 30px;
+}
+
+.main ol li{
+    padding: -30px;
+    line-height: 2rem;
+    font-size: 1rem;
+    border-bottom: 1px solid grey;
+}
+
+img{
+    max-width: 300px;
+    max-height: 200px;
+}
+
 p{
     font-size: 1.2rem;
     margin: 10px;
     padding: 10px;
     line-height: 2.4rem;
+}
+
+.pub-container{
+    display: flex;
 }
 
 .main h1{

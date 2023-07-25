@@ -17,6 +17,7 @@ body{
 .main{
     position: relative;
     display: flex;
+    flex-direction: column;
     padding: 0px auto;
 }
 
@@ -128,22 +129,117 @@ body.panel-open .panel {
     text-align: center;
 }
 
+.lab-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 10px;
+}
+
+.instrument-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.A{
+    background-color: lightgrey;
+
+}
+
+.B{
+    background-color: white;
+}
+
+.img-container{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 0px auto;
+}
+
+img{
+    align-self: center;
+    margin: 0px auto;
+}
+
+.main h2 {
+    color: gold;
+    font-weight: bold;
+    background-color: black;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    vertical-align: center;
+    width: 100%;
+    font-size: 1.8rem;
+    height: 3rem;
+    margin-top: 20px;
+}
+
+.main h3 {
+    font-size: 1.5em;
+    margin-bottom: 1rem;
+    padding: 10px auto;
+    text-align: center;
+    font-weight: bold;
+}
+
+h4 {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+p{
+    font-size: 1.2rem;
+    margin: 10px;
+    padding: 10px;
+    line-height: 2.4rem;
+}
+
+a{
+    color: green;
+}
+
+ul li{
+    font-size: 1.2rem;
+    margin: 10px;
+    padding: 10px;
+    line-height: 2.4rem;
+}
+
+.main h1{
+    color: gold;
+    font-weight: bold;
+    background-color: black;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    vertical-align: center;
+    width: 100%;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    height: 3rem;
+}
 
 footer{
     background-color: black;
     padding: 1.5rem 2rem;
     color: white;
     display: flex;
-    font-size: .75rem;
+    font-size: 1.3rem;
 }
 
 footer a{
     color: white;
 }
 
-footer a:hover{
-    mouse: pointer;
-}
 .stt {
     position: fixed;
     z-index: 12;
@@ -155,8 +251,8 @@ footer a:hover{
     background: rgb(172, 172, 174) url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 384 512'%3E%3Cpath fill='currentColor' d='M352 352c-8.188 0-16.38-3.125-22.62-9.375L192 205.3l-137.4 137.4c-12.5 12.5-32.75 12.5-45.25 0s-12.5-32.75 0-45.25l160-160c12.5-12.5 32.75-12.5 45.25 0l160 160c12.5 12.5 12.5 32.75 0 45.25C368.4 348.9 360.2 352 352 352z'%3E%3C/path%3E%3C/svg%3E") center no-repeat;
     box-shadow: 0 0.25rem 0.5rem 0 gray;
     opacity: 0.7;
-  }
- .stt:hover {
+}
+.stt:hover {
     opacity: 0.8;
 }
 .stt:focus {
@@ -181,6 +277,9 @@ footer a:hover{
   }
 
   @media screen and (max-width: 1200px) {
+    p{
+        font-size: 1.2em;
+    }
   }
 
   @media screen and (max-width: 1080px) {
@@ -190,6 +289,9 @@ footer a:hover{
     nav {
         font-size: 0.8rem;
         padding: 0.5rem 0.7rem;
+    }
+    p{
+        font-size: 1.2em;
     }
     .banner h1{
         font-size: 5em;
@@ -201,6 +303,12 @@ footer a:hover{
     
     .banner h3{
         font-size: 2em;
+    }
+    .lab-container{
+        display: flex;
+        padding: 10px 10px;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
   }
@@ -218,11 +326,26 @@ footer a:hover{
     .banner {
         height: 60%;
     }
+    .lab-container{
+        display: flex;
+        padding: 10px 10px;
+        flex-wrap: wrap;
+    }
   }
 
   @media screen and (min-width: 800px) and (max-width: 1000) {
     .banner {
         height: 60%;
+    }
+    .lab-container{
+        display: flex;
+        padding: 10px 10px;
+        flex-wrap: wrap;
+    }
+    img{
+        max-width: 600px;
+        max-height: 400px;
+        width: 100%;
     }
   }
 
@@ -233,8 +356,30 @@ footer a:hover{
     .banner {
         height: 60%;
     }
+    .mission{
+        position: relative;
+        color:darkslategray;
+        list-style: 1.4;
+        font-size: 100%;
+        align-items: center;
+        justify-content: center;
+        grid-column: 1 /span 1;
+    }
     footer{
         display: none;
+    }
+    .lab-container{
+        display: flex;
+        padding: 10px 10px;
+        flex-wrap: wrap;
+    }
+    img{
+        max-width: 600px;
+        max-height: 400px;
+        width: 100%;
+    }
+    p {
+        font-size: 0.9em;
     }
     .desktop-nav{
         display: none;
@@ -254,8 +399,21 @@ footer a:hover{
   }
 
   @media screen and (max-width: 500px) {
+    img{
+        max-height: 300px;
+        max-width: 300px;
+    }
     .banner {
         height: 40%;
+    }
+    .mission{
+        position: relative;
+        color:darkslategray;
+        list-style: 1.4;
+        font-size: 100%;
+        align-items: center;
+        justify-content: center;
+        grid-column: 1 /span 1;
     }
     .main h1{
         font-size: 1.5rem;
