@@ -52,6 +52,9 @@ header .container {
     padding: 0px 20px
 }
 
+header a {
+    color: white;
+}
 header .logo {
     font-weight: bold;
     font-size: 1.5rem;

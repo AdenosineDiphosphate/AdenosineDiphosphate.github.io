@@ -47,6 +47,10 @@ body {
     background-color: black;
 }
 
+header a {
+    color: white;
+}
+
 header {
     position: fixed;
     top: 0;

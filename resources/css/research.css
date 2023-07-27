@@ -30,6 +30,10 @@ header {
     background-color: black;
 }
 
+header a {
+    color: white;
+}
+
 #menu-button {
     display: none;
     background: none;
