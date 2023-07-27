@@ -47,7 +47,9 @@ header {
 header .container {
     display: flex;
     align-items: center;
-    padding: 1.875rem;
+    justify-self: center;
+    height: 5.5rem;
+    padding: 0px 20px
 }
 
 header .logo {
@@ -57,21 +59,61 @@ header .logo {
     flex: 1;
 }
 
-header nav ul {
+.nav-bar-desktop {
     display: flex;
 }
 
-nav li a {
-    padding-left: 1.5rem;
+.nav-bar-desktop a {
+    padding: 10px;
+    font-size: 0.9rem;
     color: white;
 }
 
 nav {
-    vertical-align: bottom;
+    vertical-align: center;
     line-height: 1.6;
     font-size: 1rem;
     color: white;
     padding: 0.5rem 1rem;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.research {
+    position: relative;
+    padding: 10px;
+    display: inline-block;
+}
+
+.research-topics {
+    display: none;
+    list-style: none;
+    position: absolute;
+    align-self: center;
+    background-color: black;
+    z-index: 5;
+    margin: 0;
+    width: 200px;
+}
+
+.research-topics a {
+    color: white;
+    padding: 12px 16px;
+    text-align: center;
+    display: block;
+    margin: 0;
+}
+
+.research-topics a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.research:hover .research-topics {
+    display: block;
 }
 
 .panel {
